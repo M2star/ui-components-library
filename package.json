@@ -1,5 +1,5 @@
 {
-  "name": "component-library",
+  "name": "@m2star/ui-components-library",
   "version": "1.0.0",
   "description": "example library",
   "main": "dist/cjs/index.js",
@@ -29,5 +29,8 @@
   },
   "dependencies": {
     "rimraf": "^5.0.5"
+  },
+  "publishConfig": {
+    "@m2star:registry": "https://npm.pkg.github.com"
   }
 }
