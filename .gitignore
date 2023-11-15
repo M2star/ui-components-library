@@ -38,8 +38,3 @@ yarn-error.log*
 /lib/
 /out/
 /build/
-
-# Ignore all files in the root except specified ones
-/*
-!/dist/
-!/src/

@@ -15,7 +15,7 @@ export const Button: React.FC<IButtonProps> = (props) => {
     if (backgroundColor) _style.backgroundColor = backgroundColor;
     if (color) _style.color = color;
     return (
-        <button style={style} {...props}>
+        <button style={_style} {...props}>
             {children}
         </button>
     );
