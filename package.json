@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "private": true,
   "files": [
-    "dist"
+    "dist","src"
   ],
   "scripts": {
     "build": "rimraf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
@@ -25,6 +25,8 @@
     "@types/react-dom": "^18.2.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup": "^4.4.1",
+    "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.2.2"
   },
@@ -37,8 +39,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "rimraf": "^5.0.5",
-    "rollup": "^4.4.1"
+    "rimraf": "^5.0.5"
   },
   "publishConfig": {
     "@m2star:registry": "https://npm.pkg.github.com"
