@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "private": true,
   "files": [
-    "dist","src"
+    "dist"
   ],
   "scripts": {
     "build": "rimraf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
