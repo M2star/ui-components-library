@@ -12,7 +12,8 @@
   "scripts": {
     "build": "rimraf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
     "build:esm": "rollup -c --bundleConfigAsCjs",
-    "build:cjs": "rollup -c --bundleConfigAsCjs"
+    "build:cjs": "rollup -c --bundleConfigAsCjs",
+    "prepare": "npm run build"
   },
   "author": "",
   "license": "MIT",
