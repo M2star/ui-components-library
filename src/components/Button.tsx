@@ -10,7 +10,7 @@ export const Button: React.FC<IButtonProps> = (props) => {
 
     let _style: React.CSSProperties = style || {};
 
-    // override deafautls
+    // override defaults
 
     if (backgroundColor) _style.backgroundColor = backgroundColor;
     if (color) _style.color = color;

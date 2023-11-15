@@ -4,23 +4,27 @@
   "description": "example library",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
   "private": true,
   "files": [
-    "dist"
+    "dist","src"
   ],
   "scripts": {
     "build": "rimraf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    "build:esm": "rollup -c --bundleConfigAsCjs",
+    "build:cjs": "rollup -c --bundleConfigAsCjs"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/node": "^20.9.0",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
@@ -28,7 +32,8 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "rollup": "^4.4.1"
   },
   "publishConfig": {
     "@m2star:registry": "https://npm.pkg.github.com"
