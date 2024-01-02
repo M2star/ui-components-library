@@ -1,0 +1,10 @@
+.btn {
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: #1b366b;
+    color: white;
+}
