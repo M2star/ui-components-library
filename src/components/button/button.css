@@ -1,0 +1,42 @@
+.btn{
+    padding: 1rem 2rem;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.3em;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+    opacity: 0.5;
+}
+
+.btn.btn-primary{
+    background: #1b366b;
+    color: #FFFFFF;
+    border-color: #1b366b;
+}
+
+.btn.btn-secondary{
+    background: #ffffff;
+    color: #213565;
+    border-color: #ffffff;
+}
+
+.btn.btn-outline{
+    background: transparent;
+    color: black;
+    border: 1px solid #1b366b;
+}
+
+.btn.btn-ghost{
+    background: transparent;
+    color: black;
+    border: none;
+}
