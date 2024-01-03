@@ -13,11 +13,10 @@ const getButtonClass = ({ btnType = 'default', className = '' }: IButtonProps) =
     return `${baseClass} ${typeClass} ${className}`;
 };
 
-const GrowButton: React.FunctionComponent<IButtonProps> = ({ children, asChild = false, ...props }) => {
-    const buttonClass = getButtonClass(props);
+const GrowButton: React.FunctionComponent<IButtonProps> = ({ children, btnType, className, asChild = false, ...props }) => {
     const Comp = asChild ? 'div' : 'button';
     return (
-        <Comp {...props} className={buttonClass}>
+        <Comp {...props} className={getButtonClass({ btnType, className })}>
             {children}
         </Comp>
     );
