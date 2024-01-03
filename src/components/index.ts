@@ -1,1 +1,1 @@
-export { default as Button } from './button/Button';
+export { default as GrowButton } from './button/Button';

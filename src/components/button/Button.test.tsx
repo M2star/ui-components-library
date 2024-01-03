@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Button from './Button';
+import GrowButton from './Button';
 
 describe('Button', () => {
     test('renders the button component', () => {
-        render(<Button>Hello World</Button>);
+        render(<GrowButton>Hello World</GrowButton>);
     });
 });
