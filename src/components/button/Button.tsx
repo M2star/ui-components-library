@@ -13,9 +13,9 @@ const getButtonClass = ({ btnType = 'default', className = '' }: IButtonProps) =
     return `${baseClass} ${typeClass} ${className}`;
 };
 
-const Button: React.FunctionComponent<IButtonProps> = ({ children, asChild=false, ...props }) => {
+const Button: React.FunctionComponent<IButtonProps> = ({ children, asChild = false, ...props }) => {
     const buttonClass = getButtonClass(props);
-    const Comp = asChild ? 'div' : 'button' 
+    const Comp = asChild ? 'div' : 'button';
     return (
         <Comp {...props} className={buttonClass}>
             {children}

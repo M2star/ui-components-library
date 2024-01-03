@@ -1,4 +1,4 @@
-.btn{
+.btn {
     padding: 1rem 2rem;
     white-space: nowrap;
     display: flex;
@@ -12,30 +12,30 @@
     border-style: solid;
 }
 
-.btn:disabled{
+.btn:disabled {
     cursor: no-drop;
     opacity: 0.5;
 }
 
-.btn.btn-primary{
+.btn.btn-primary {
     background: #1b366b;
-    color: #FFFFFF;
+    color: #ffffff;
     border-color: #1b366b;
 }
 
-.btn.btn-secondary{
+.btn.btn-secondary {
     background: #ffffff;
     color: #213565;
     border-color: #ffffff;
 }
 
-.btn.btn-outline{
+.btn.btn-outline {
     background: transparent;
     color: black;
     border: 1px solid #1b366b;
 }
 
-.btn.btn-ghost{
+.btn.btn-ghost {
     background: transparent;
     color: black;
     border: none;

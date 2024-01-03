@@ -9,7 +9,7 @@ const meta: Meta = {
     component: Button,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-        layout: 'centered',
+        layout: 'centered'
     },
     // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
     tags: ['autodocs'],
@@ -18,15 +18,15 @@ const meta: Meta = {
         btnType: {
             control: {
                 type: 'select',
-                options: ['primary', 'secondary', 'variant', 'outline'],
-            },
+                options: ['primary', 'secondary', 'variant', 'outline']
+            }
         },
         asChild: {
-            type:'boolean',
-            options:['div','button']
+            type: 'boolean',
+            options: ['div', 'button']
         }
         // You can add more argTypes here based on your component's props
-    },
+    }
 };
 
 export default meta;
@@ -35,34 +35,34 @@ export default meta;
 export const Primary = {
     args: {
         btnType: 'primary',
-        children: 'Button',
-    },
+        children: 'Button'
+    }
 };
 
 export const Secondary = {
     args: {
         btnType: 'secondary',
-        children: 'Button',
-    },
+        children: 'Button'
+    }
 };
 
 export const Destructive = {
     args: {
         btnType: 'destructive',
-        children: 'Button',
-    },
+        children: 'Button'
+    }
 };
 
 export const Outline = {
     args: {
         btnType: 'outline',
-        children: 'Button',
-    },
+        children: 'Button'
+    }
 };
 
 export const Ghost = {
     args: {
         btnType: 'ghost',
-        children: 'Button',
-    },
+        children: 'Button'
+    }
 };
