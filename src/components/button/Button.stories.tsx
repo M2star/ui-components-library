@@ -16,14 +16,18 @@ const meta: Meta = {
     // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
     argTypes: {
         btnType: {
-            control: {
-                type: 'select',
-                options: ['primary', 'secondary', 'variant', 'outline']
-            }
+            control: 'select',
+            options: ['default', 'secondary', 'ghost', 'outline', 'destructive'],
+            description: 'this is default css variable'
         },
         asChild: {
             type: 'boolean',
-            options: ['div', 'button']
+            options: ['div', 'button'],
+            description: 'to convert div for passing link',
+            defaultValue: false
+        },
+        children: {
+            description: 'pass button property if asChild true pass any type links'
         }
         // You can add more argTypes here based on your component's props
     }
@@ -34,35 +38,35 @@ export default meta;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary = {
     args: {
-        btnType: 'primary',
-        children: 'Button'
+        btnType: 'default',
+        children: 'Default'
     }
 };
 
 export const Secondary = {
     args: {
         btnType: 'secondary',
-        children: 'Button'
+        children: 'Secondary'
     }
 };
 
 export const Destructive = {
     args: {
         btnType: 'destructive',
-        children: 'Button'
+        children: 'Destructive'
     }
 };
 
 export const Outline = {
     args: {
         btnType: 'outline',
-        children: 'Button'
+        children: 'Outline'
     }
 };
 
 export const Ghost = {
     args: {
         btnType: 'ghost',
-        children: 'Button'
+        children: 'Ghost'
     }
 };

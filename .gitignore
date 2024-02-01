@@ -1,13 +1,22 @@
-# Ignore Storybook build output
-.storybook-static/
-
 # Ignore node_modules directory
 node_modules/
 
+# Ignore Storybook build directory
+.storybook-static/
+
+# Ignore Storybook development directory
+.storybook/develop/
+
+# Ignore Storybook config directory
+.storybook/config/
+
+# Ignore generated files by Storybook
+.storybook/*.js
+
 # Ignore build artifacts
-/build/
-/dist/
-/out/
+dist/
+build/
+out/
 
 # Ignore npm logs
 npm-debug.log

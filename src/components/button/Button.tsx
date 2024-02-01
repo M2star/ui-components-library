@@ -2,8 +2,8 @@ import React from 'react';
 import './button.css';
 
 interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement | HTMLDivElement> {
-    btnType?: 'default' | 'secondary' | 'Destructive' | 'outline' | 'ghost';
-    asChild?: Boolean;
+    btnType?: 'default' | 'secondary' | 'destructive' | 'outline' | 'ghost';
+    asChild?: boolean;
 }
 
 const getButtonClass = ({ btnType = 'default', className = '' }: IButtonProps) => {
@@ -13,10 +13,11 @@ const getButtonClass = ({ btnType = 'default', className = '' }: IButtonProps) =
     return `${baseClass} ${typeClass} ${className}`;
 };
 
-const GrowButton: React.FunctionComponent<IButtonProps> = ({ children, btnType, className, asChild = false, ...props }) => {
+const GrowButton: React.FunctionComponent<IButtonProps> = ({ children, asChild = false, ...props }) => {
     const Comp = asChild ? 'div' : 'button';
+    const buttonClass = getButtonClass(props);
     return (
-        <Comp {...props} className={getButtonClass({ btnType, className })}>
+        <Comp {...props} className={buttonClass}>
             {children}
         </Comp>
     );

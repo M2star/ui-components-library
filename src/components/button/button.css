@@ -1,3 +1,4 @@
+@import '../../global.css';
 .btn {
     padding: 1rem 2rem;
     white-space: nowrap;
@@ -18,8 +19,8 @@
 }
 
 .btn.btn-default {
-    background: #1b366b;
-    color: #ffffff;
+    background: var(--primary-button-bg);
+    color: var(--primary-button-color);
     border-color: #1b366b;
 }
 
@@ -31,12 +32,17 @@
 
 .btn.btn-outline {
     background: transparent;
-    color: black;
-    border: 1px solid #1b366b;
+    color: var(--secondary-button-color);
+    border-color: #213565;
 }
 
 .btn.btn-ghost {
     background: transparent;
-    color: black;
+    color: (--secondary-button-color);
     border: none;
+}
+.btn.btn-destructive {
+    background: #e93131;
+    color: white;
+    border-color: E93131;
 }

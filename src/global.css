@@ -1,0 +1,17 @@
+:root {
+    --primary-button-bg: '#1b366b';
+    --secondary-button-bg: '#ffffff';
+    --destructive-button-bg: '#E93131';
+    --primary-button-color: '#ffffff';
+    --secondary-button-color: '#000000';
+}
+
+@media (prefers-color-scheme: 'dark') {
+    :root {
+        --primary-button-bg: '#ffffff';
+        --secondary-button-bg: '#ffffff';
+        --destructive-button-bg: '#E93131';
+        --primary-button-color: '#000000';
+        --secondary-button-color: '#ffffff';
+    }
+}
